@@ -1,0 +1,83 @@
+#carousel {
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position:relative;
+    border: 1px solid #000;
+}
+
+ul {
+    width: 2000px;
+    list-style-type: none;
+    margin:0;
+    padding: 0; 
+}
+
+ul li {
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    float: left;
+}
+    
+ul li img {
+    width: 100%;
+    height: 300px;
+}
+
+.layer {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 300px;
+}
+
+.layer-dots {
+    padding: 0 10px;
+ 	color: #fff;
+ 	position: absolute;
+ 	top: 250px;
+    transform: translateX(-50%);
+    margin-left: 200px;
+}
+
+
+.layer .fa {
+ 	color: #fff;
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	padding: 0 5px;
+ 	transition: .5s;
+ 	opacity: 0.4;
+}
+
+.layer .fa-angle-right {
+ 	right: 0;
+}
+
+.layer .fa-circle {
+	position: relative;
+}
+
+.layer .fa-circle-o {
+	position: absolute;
+	top: 0;
+	opacity: 0;  
+}
+
+
+.layer:hover i {
+	opacity: 1;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover,
+.layer .fa-circle:hover {
+	opacity: 0;
+ 	cursor: pointer;
+ 	color: #888;
+}
+
